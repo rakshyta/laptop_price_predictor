@@ -3,9 +3,9 @@ import pickle
 import pandas as pd
 import numpy as np
 
-model1 = open('df.pickle', 'rb')
-clf1 = pickle.load(model1)
-model1.close()
+# model1 = open('df.pickle', 'rb')
+# clf1 = pickle.load(model1)
+# model1.close()
 
 model2 = open('pipe.pickle', 'rb')
 clf2 = pickle.load(model2)
