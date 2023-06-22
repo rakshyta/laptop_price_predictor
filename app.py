@@ -2,7 +2,9 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.ensemble import RandomForestRegressor
 
 model = open('pipe.pickle', 'rb')
 clf = pickle.load(model)
