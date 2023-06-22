@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler
 
 model1 = open('df.pickle', 'rb')
 clf1 = pickle.load(model1)
